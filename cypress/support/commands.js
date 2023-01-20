@@ -29,3 +29,8 @@ Cypress.Commands.add('login', () => {
     cy.get('[data-test="password"]').type('secret_sauce')
     cy.get('[data-test="login-button"]').click()
 })
+
+Cypress.Commands.add('addItem', () => {
+    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
+    cy.get('.shopping_cart_link').click()
+})
