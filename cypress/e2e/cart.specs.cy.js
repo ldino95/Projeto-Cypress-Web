@@ -1,4 +1,3 @@
-import cart from "../support/pages/cart/index";
 import cartActions from "../support/pages/cart/index";
 
 describe("Carrinho", function () {
