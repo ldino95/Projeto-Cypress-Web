@@ -1,12 +1,12 @@
 import loginActions from "../support/pages/login/index";
 
-describe("Produtos", function () {
+describe("Login", function () {
   beforeEach(() => {
     cy.visit("/");
     
   });
 
-  context("validar funcionalidades na pagina de produtos", function () {
+  context("validar funcionalidades na pagina de login", function () {
     it("CT001 - Validar login com usuário valido", function () {
       loginActions.loginCorreto();
     });

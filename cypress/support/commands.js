@@ -33,4 +33,13 @@ Cypress.Commands.add('login', () => {
 Cypress.Commands.add('addItem', () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
     cy.get('.shopping_cart_link').click()
+    
+})
+
+Cypress.Commands.add('cartClickCheckout', () => {
+    cy.get('[data-test="checkout"]').should('be.visible')
+    cy.get('[data-test="checkout"]').click()
+    cy.url().should("contain", "/checkout-step-one.html");
+   
+    
 })
