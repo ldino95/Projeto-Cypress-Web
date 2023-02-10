@@ -47,3 +47,9 @@ cy.get('[data-test="lastName"]').type("Silva")
 cy.get('[data-test="postalCode"]').type("03097010")
 cy.get('[data-test="continue"]').click()
 });
+
+Cypress.Commands.add("clickButtonFinish", () => {
+    cy.get('[data-test="finish"]').click()
+
+    });
+
