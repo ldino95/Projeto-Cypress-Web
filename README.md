@@ -22,3 +22,7 @@ Gerar os resultados dos testes
 
 Allure report
 - npx allure open allure-report
+
+
+[Allure Report](<http://192.168.0.28:57456/index.html>)
+  
